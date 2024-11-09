@@ -1,0 +1,62 @@
+body{
+    /* background-image: linear-gradient(to top right, #0c262a, #0c3643); */
+    /* background-color: #004c4c; */
+    background-image: url('./bgreen.jpg');
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+header {
+    text-align: center; /* Centers the text */
+    padding: 20px; /* Adds some spacing around the header */
+    background-color: #053d3d; /* Optional: adds a background color */
+    margin-bottom: 20px; /* Adds space below the header */
+    font-family: "Poppins", sans-serif;
+}
+
+.slider{
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+}
+.item{
+    position: absolute;
+    width: 200px;
+    height: 320px;
+    text-align: justify;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    transition:  0.5s;
+    left: calc(50% - 110px);
+    top: 0;
+}
+#next{
+    position: absolute;
+    right: 50px;
+    top: 40%;
+}
+#prev{
+    position: absolute;
+    left: 50px;
+    top: 40%;
+}
+#prev, #next{
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+#prev:hover,
+#next:hover{
+    opacity: 1;
+}
